@@ -1,16 +1,27 @@
 package org.miguelangel
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-fun main() {
-    val name = "Kotlin"
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    println("Hello, " + name + "!")
+import org.miguelangel.CommonFixtures.author
 
-    for (i in 1..5) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        println("i = $i")
-    }
+fun main() {
+    //TIP Start of the app , if you need to change the author name, pls look a the fixtures
+    printStart(author)
+
+}
+
+
+fun printStart(author : String ){
+
+    clearConsole()
+
+    println("""
+        ==================================
+        HELLO, WELCOME TO THE TASK TRACKER
+        AUTHOR: $author
+        ==================================
+    """.trimIndent())
+}
+
+private fun clearConsole() {
+    print("\u001b[H\u001b[2J")
+    System.out.flush()
 }
