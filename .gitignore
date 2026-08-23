@@ -45,4 +45,4 @@ bin/
 .DS_Store
 
 ### Gradle Wrapper ###
-.gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.jar
