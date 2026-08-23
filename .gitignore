@@ -43,3 +43,6 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### Gradle Wrapper ###
+gradle/wrapper/gradle-wrapper.jar
